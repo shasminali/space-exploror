@@ -1,0 +1,53 @@
+body {
+    font-family:'Arial', sans-serif;
+    background-color: #0D1117;
+    color:#C9D1D9;
+}
+
+h1 {
+    color:#58A6FF;
+}
+
+/*attribute section */
+a {
+    color:#79C0FF;
+    text-decoration:none;
+}
+
+a:hover {
+    color: #1F6FEB;
+}
+
+/*child selector*/
+ul > li{
+    font-weight:bold;
+}
+
+/*sibling selector*/
+h1 + p{
+    background-color: #161B22;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/*pseudo-class selector*/
+ul li:hover{
+    color: #79C0FF;
+}
+
+/*::nth-child(n) pseudo-class*/
+ul li:nth-child(3){
+    background-color: #161B22;
+}
+
+/*::not(selector) pseudo-class*/
+p:not(:first-of-type){
+    text-decoration:underline;
+}
+
+/*::first-letter pseudo-element*/
+p:first-letter{
+    font-size:200%;
+    color:#FF7B72;
+}
+    
